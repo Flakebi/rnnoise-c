@@ -75,6 +75,7 @@ fn main() {
 		.file("rnnoise/src/rnn.c")
 		.file("rnnoise/src/rnn_data.c")
 		.file("rnnoise/src/rnn_reader.c")
+		.define("USE_MALLOC", Some("1"))
 		.include("rnnoise/src")
 		.include("rnnoise/include")
 		.compile("rnnoise");
